@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+    .styledDiv {
+        border: 2px solid teal;
+        margin: 20px;
+        padding: 10px;
+        background-color: lightyellow;
+    }
+    .styledParagraph {
+        font-size: 18px;
+        font-weight: bold;
+        color: teal;
+        padding: 5px;
+    }
+    </style>
+</head>
+<body>
+
+<div id="div1" class="styledDiv">
+    <input id="input1" type="text"/>
+    <input id="input2" type="text"/>
+    <p class="styledParagraph"></p>
+    
+</div>
+
+<div id="div2" class="styledDiv">
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête.</p>
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête.</p>
+   
+</div>
+
+<div id="div3" class="styledDiv">
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête.</p>
+   
+</div>
+ <script>
+        $(document).ready(function() {
+
+             $("#input1").blur(function(){
+        var val1 = $("#input1").val();
+        // var val2 = $("#input2").val();
+        $("#div1 p:first").text(val1 + "@ucad.edu.sn ");
+})
+
+            $('#input1').on('input', function() {
+                if ($(this).val().length == 5) {
+                    $(this).next('#input2').focus();
+                }
+            });
+        });
+        setInterval(function(){
+           // $('p').on('mouseover',function(){
+            $("p").css({
+                'background-color':'green','font-size':'150%'
+            })
+            $("p").fadeOut(5000,function(){
+                $("p").fadeIn(5000);
+            });
+            
+        // }) 
+        },10)
+        
+
+    </script>
+
+<script>
+    $(document).ready(function() {
+
+    // $("#input1").on('keyup',function(){
+        // if ( $("#input1").val().length == 5 ) {
+            // $('#input1').next('#input2').focus().
+        // }
+    // })
+// })
+
+     // $(document).ready(function() {
+     //        $('#input').on('input', function() {
+     //            if ($(this).val().length == 5) {
+     //                $(this).next('input[type="text"]').focus();
+     //            }
+     //        })
+// $(document).ready(function(){
+
+
+    
+    // console.log($("#div1").html());  
+    
+    
+    // $("#div2 p:first").text("<h1>Nouveau Texte</h1>");
+    
+    // $("#div1").prepend("<h1>Titre du Premier Conteneur</h1>");
+    
+   
+
+        // $("#input1").blur(function(){
+            // $("#input1").attr('disabled',true);
+        // })
+
+
+       /* document.getElementById("input1").addEventListener('blur',function(){
+            document.getElementById("input1").disabled=true;
+        })
+*/
+
+    // });
+ // $("div1,div2,div3").mouseover(function () {
+ //        this.css({
+ //            'color'='red';
+ //        })
+ //    })
+});
+
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,488 @@
+*{
+    font-family: monospaces;
+    /* text-align: center;
+    align-items: center;
+    justify-content: center; */
+}
+html,body,main{
+    min-height: 57vh;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cedef0;
+    
+}
+.tab_classe_profResp td {
+width: 300px;
+    
+}
+.jourMod:hover{
+    /* color: red; */
+    cursor: pointer;
+    background-color: #5590d3;
+}
+
+
+.evolutionCours{
+    border: solid;
+    width: 100%;
+    height: 40px;
+}
+.h1connexion{
+    color: white;
+    background-color: #6b9bd1;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width:45%;
+    border: solid;
+    margin: auto;
+    margin-top: 20px;
+}
+.detail_responsable{
+    cursor: pointer;
+    color: green;
+    text-decoration: underline;
+    /* background-color: green; */
+}
+main {
+    /* min-height:600px ; */
+    /* padding: 1rem; */
+    width: 100%;
+/*    border:5px solid ;*/
+}
+
+section {
+    background-color: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+}
+#form-connect{
+    display: flex;
+/*    border: solid;*/
+    align-items: center;
+    display: none;
+}
+#form-connect input{
+    width: 300px;
+}
+#divCbtn{
+    border: solid;
+    width: 330px;
+    height: 50px;
+    margin:auto;
+    text-align: center;
+}
+#divCbtn button{
+    background-color: #6b9bd1;
+    font-weight: bold;
+    font-size: 120%;
+    padding: 10px;
+    width: 130px;
+    border-radius: 10px;
+    border:#6b9bd1 solid;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 4px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+           
+}
+#form-inscription{
+     /*position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;*/
+/*        background-color: #cedef0;*/
+/*        z-index: 10;*/    
+        display: flex;
+        margin:auto;
+        justify-content: center;
+        align-items: center;
+/*        border: solid #6b9bd1;*/
+        width: 30%;
+        height: 60%;
+        margin-top: -30px;
+        display: none;
+
+/*    border: solid;*/
+/*    align-items: center;*/
+}
+#form-inscription input{
+    width: 300px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form select, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+form input[type="submit"], form button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover, form button:hover {
+    background-color: #555;
+}
+#edt{
+    text-align: center;
+}
+#edt h2 {
+    background-color: #6b9bd1;
+}
+.heure{
+    font-weight: bold;
+}
+#calendar,.edtClasseGerer {
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tr1{
+    font-weight: bold;
+}
+ table td {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+}
+ table  {
+    border-collapse: collapse;
+/*    background-color: #fff;*/
+/*    border: 1px solid #ccc;*/
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+#notifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#notifications ul li {
+    background-color: #eee;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+#imgprofil{
+    margin-top: -80px;
+    float: right;
+    margin-right: 170px;
+    width: 80px;
+}
+.confirmerCour:hover{
+    background-color: #96c2ed;
+    cursor: pointer;
+}
+#nomprofil{
+    margin-top: -1px;
+    float: right;
+    margin-right: 147px;
+    width: 130px;
+}
+#Senseignants{
+    display: none;
+}
+#form-enseignant{
+    display: none;
+}
+#Senseignants button{
+    font-weight: bold;
+    /* padding: 1px; */
+    cursor: pointer;
+    border: 1px #6b9bd1 solid;
+
+}
+#Senseignants button:hover{
+    background-color: #6b9bd1;
+/*    border: none;*/
+    
+}
+.ppp{
+    width: 100%;
+    height: 20px;
+    border: solid;
+}
+/*css pour le modal*/
+
+
+
+
+
+
+
+
+
+.img-prof-resp{
+    width: 40%;
+    height: 100px;
+    /* border: solid; */
+}
+li{
+    text-decoration: none   ;
+}
+.P_prof_resp{
+    /* top: 0;
+    margin: 0;
+    text-decoration: none;
+    border: 2px white solid; */
+    padding: 10px;
+    /* width: 80%; */
+    /* text-transform: none; */
+
+}
+.P_prof_resp:hover{
+    background-color: beige;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+.btn-custom {
+    background-color: #6b9bd1;
+    color: white;
+}
+.btn-custom:hover {
+    background-color: #5a8abf;
+}
+.thead-custom {
+    background-color: #6b9bd1;
+    color: white;
+}
+header {
+    background-color: #6b9bd1;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+#imglog {
+    width: 50px;
+    height: auto;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color: #6b9bd1;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+    border-top: 10px solid #1f5f9f;
+    margin-bottom: 0;
+}
+
+
+
+
+
+.mod_emploi{
+    color:#1f5f9f;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+        #login-modal{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #login-modal_modifier{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            margin: auto;
+        }
+        .modal{
+            background: #f4b41a;
+            padding: 10px 0px 20px 0;
+            border-radius: 10px;
+            width: 450px;
+            text-align: center;
+        }
+    
+        .top-form{
+            display: flex;
+            justify-content: flex-end;
+        }
+    
+        .top-form .close-modal{
+            cursor: pointer;
+            /* padding: 0 20px; */
+            font-size: 200px;
+            background-color: red;
+        }
+        /* .modal-content{
+            width: 70%;
+            display: flex;
+            margin: auto;
+         } */
+
+         /* Custom styles for the list items */
+.liSalle {
+    transition: background-color 0.3s;
+}
+
+.liSalle:hover {
+    background-color: #5590d3; /* Change background to white on hover */
+}
+.closemodal{
+    cursor: pointer;
+    /* padding: 0 20px; */
+    display: flex;
+    margin-top: 0px;
+    float: right;
+    font-size: 30px;
+    color: red;
+}
+         #modal_prof,#modal_modifie_cours{ 
+             width: 100%;
+            height: 100vh;
+            /* border: solid;  */
+            margin: auto;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .modal-content{
+            width: 50%;
+            background-color: #c4dbf2;
+          }
+          .close-modal {
+            cursor: pointer;
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .btn-dispo {
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 3px;
+        }
+
+
+
+        .btn-custom-1 {
+            background-color: #6b9bd1;
+            color: white;
+        }
+        .btn-custom-1:hover {
+            background-color: #5590d3;
+        }
+        .custom-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .form-control {
+            border-color: #6b9bd1;
+        }
+        .form-control:focus {
+            border-color: #5590d3;
+            box-shadow: 0 0 0 .2rem rgba(108, 117, 125, .25);
+        }
+
+

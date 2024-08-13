@@ -1,0 +1,259 @@
+*{
+    font-family: monospaces;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cedef0;
+}
+
+header {
+    background-color: #6b9bd1;
+/*    background-image: url('img/imgbankhd.png');*/
+    color: white;
+    padding: 1rem;
+    text-align: center;
+     border:#6b9bd1 solid;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 4px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+   
+}
+.h1connexion{
+    color: white;
+    background-color: #6b9bd1;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width:45%;
+    border: solid;
+    margin: auto;
+    margin-top: 20px;
+}
+header h1 {
+    margin: 0;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+}
+#imglog{
+    display: flex;
+    width: 100px;
+    margin-top: -40px;
+}
+#imglogConnect{
+    width: 100px;
+    height: auto;
+            
+}
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #6b9bd1;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 1rem;
+/*    border:5px solid ;*/
+}
+
+section {
+    background-color: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+}
+#form-connect{
+    display: flex;
+/*    border: solid;*/
+    align-items: center;
+    display: none;
+}
+#form-connect input{
+    width: 300px;
+}
+#listEnseignant{
+    display: none;
+}
+#divCbtn{
+    border: solid;
+    width: 330px;
+    height: 50px;
+    margin:auto;
+    text-align: center;
+}
+#divCbtn button{
+    background-color: #6b9bd1;
+    font-weight: bold;
+    font-size: 120%;
+    padding: 10px;
+    width: 130px;
+    border-radius: 10px;
+    border:#6b9bd1 solid;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 4px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+           
+}
+#form-inscription{
+     /*position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;*/
+/*        background-color: #cedef0;*/
+/*        z-index: 10;*/    
+        display: flex;
+        margin:auto;
+        justify-content: center;
+        align-items: center;
+/*        border: solid #6b9bd1;*/
+        width: 30%;
+        height: 60%;
+        margin-top: -30px;
+        display: none;
+
+/*    border: solid;*/
+/*    align-items: center;*/
+}
+#form-inscription input{
+    width: 300px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form select, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+form input[type="submit"]{
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover{
+    background-color: #555;
+}
+#edt{
+    text-align: center;
+}
+#edt h2 {
+    background-color: #6b9bd1;
+}
+.heure{
+    font-weight: bold;
+}
+#calendar {
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tr1{
+    font-weight: bold;
+}
+#calendar table td {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 100px;
+}
+#calendar table  {
+    border-collapse: collapse;
+/*    background-color: #fff;*/
+/*    border: 1px solid #ccc;*/
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer {
+    background-color: #6b9bd1;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#notifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#notifications ul li {
+    background-color: #eee;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+#imgprofil{
+    margin-top: -80px;
+    float: right;
+    margin-right: 170px;
+    width: 80px;
+}
+#nomprofil{
+    margin-top: -1px;
+    float: right;
+    margin-right: 147px;
+    width: 130px;
+}
+#Senseignants{
+    display: none;
+}
+#form-enseignant{
+    display: none;
+}
+button{
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px #6b9bd1 solid;
+
+}
+button:hover{
+    background-color: #6b9bd1;
+/*    border: none;*/
+    
+}
+
+
+
+
+
+
+
+

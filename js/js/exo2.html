@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    .styledDiv {
+        border: 2px solid teal;
+        margin: 20px;
+        padding: 10px;
+        background-color: lightyellow;
+    }
+    .styledParagraph {
+        font-size: 18px;
+        font-weight: bold;
+        color: teal;
+        padding: 5px;
+    }
+    </style>
+</head>
+<body>
+
+<div id="div1" class="styledDiv">
+    <h1>preparation des elections</h1>
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête. Nous vous tiendrons informés dès qu'elle sera finalisée et nous le publierons.Merci pour votre compréhension et votre soutien!"</p>
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête. Nous vous tiendrons informés dès qu'elle sera finalisée et nous le publierons.Merci pour votre compréhension et votre soutien!"</p>
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête. Nous vous tiendrons informés dès qu'elle sera finalisée et nous le publierons.Merci pour votre compréhension et votre soutien!"</p>
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête. Nous vous tiendrons informés dès qu'elle sera finalisée et nous le publierons.Merci pour votre compréhension et votre soutien!"</p>
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête. Nous vous tiendrons informés dès qu'elle sera finalisée et nous le publierons.Merci pour votre compréhension et votre soutien!"</p>
+</div>
+
+<div id="div2" class="styledDiv">
+    <h1>preparation des elections</h1>
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête. Nous vous tiendrons informés dès qu'elle sera finalisée et nous le publierons.Merci pour votre compréhension et votre soutien!"</p>
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête. Nous vous tiendrons informés dès qu'elle sera finalisée et nous le publierons.Merci pour votre compréhension et votre soutien!"</p>
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête. Nous vous tiendrons informés dès qu'elle sera finalisée et nous le publierons.Merci pour votre compréhension et votre soutien!"</p>
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête. Nous vous tiendrons informés dès qu'elle sera finalisée et nous le publierons.Merci pour votre compréhension et votre soutien!"</p>
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête. Nous vous tiendrons informés dès qu'elle sera finalisée et nous le publierons.Merci pour votre compréhension et votre soutien!"</p>
+</div>
+
+<div id="div3" class="styledDiv">
+    <h1>preparation des elections</h1>
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête. Nous vous tiendrons informés dès qu'elle sera finalisée et nous le publierons.Merci pour votre compréhension et votre soutien!"</p>
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête. Nous vous tiendrons informés dès qu'elle sera finalisée et nous le publierons.Merci pour votre compréhension et votre soutien!"</p>
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête. Nous vous tiendrons informés dès qu'elle sera finalisée et nous le publierons.Merci pour votre compréhension et votre soutien!"</p>
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête. Nous vous tiendrons informés dès qu'elle sera finalisée et nous le publierons.Merci pour votre compréhension et votre soutien!"</p>
+    <p class="styledParagraph">🚨🚨"Nous travaillons actuellement sur la conception de l'affiche électorale et elle n'est pas encore prête. Nous vous tiendrons informés dès qu'elle sera finalisée et nous le publierons.Merci pour votre compréhension et votre soutien!"</p>
+</div>
+<button>faire apparaitre le troisieme div</button>
+<script>
+$(document).ready(function(){
+    $("#div1").click(function(){
+    $("#div1 p, #div2 p, #div3 p").hide();   
+    });
+    $("#div2").click(function(){
+        $("#div1 p").show();
+    });
+    $("#div3").click(function(){
+        $("#div1 p, #div2 p").toggle();
+    });
+    $('button').click(function(){
+        #("#div3").toggle():
+    })
+    $("div1,div2,div3").mouseover(function () {
+        this.css({
+            'color'='red';
+        })
+    })
+});
+</script>
+
+</body>
+</html> 

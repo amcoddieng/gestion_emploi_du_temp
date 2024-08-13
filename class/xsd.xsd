@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="livre-de-comptes">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="valeur-initiale" type="xsd:decimal"/>
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+          <xsd:element name="depot">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="payeur" type="xsd:string"/>
+                <xsd:element name="montant" type="xsd:decimal"/>
+                <xsd:element name="date" type="xsd:date"/>
+                <xsd:element name="description">
+                  <xsd:complexType>
+                    <xsd:simpleContent>
+                      <xsd:extension base="xsd:string">
+                        <xsd:attribute name="categorie" type="xsd:string"/>
+                      </xsd:extension>
+                    </xsd:simpleContent>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="type" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="retrait">
+            <xsd:complexType>
+	              <xsd:sequence>
+                <xsd:element name="destinataire" type="xsd:string" minOccurs="0"/>
+                <xsd:element name="montant" type="xsd:decimal"/>
+                <xsd:element name="date" type="xsd:date"/>
+                <xsd:element name="description">
+                  <xsd:complexType>
+                    <xsd:simpleContent>
+                      <xsd:extension base="xsd:string">
+                        <xsd:attribute name="categorie" type="xsd:string"/>
+                      </xsd:extension>
+                    </xsd:simpleContent>
+                  </xsd:complexType>
+                </xsd:element>
+              </xsd:sequence>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="numero" type="xsd:integer" use="optional"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

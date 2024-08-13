@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<livre-de-comptes>
+  <valeur-initiale>22.00</valeur-initiale>
+  <depot type="cheque">
+    <payeur>SNCM</payeur>
+    <montant>1344.88</montant>
+    <date>3-6-10</date>
+    <description categorie="salaire">salaire de Mai</description>
+  </depot>
+  <retrait type="cheque" numero="980">
+    <destinataire>Sac à pof</destinataire>
+    <montant>132.77</montant>
+    <date>17-6-10</date>
+    <description categorie="loisirs">equipement d'escalade</description>
+  </retrait>
+  <retrait type="distributeur">
+    <montant>40.00</montant>
+    <date>24-6-10</date>
+    <description categorie="liquide">argent de poche</description>
+  </retrait>
+  <retrait type="debit">
+    <destinataire>Pizzeria Florence</destinataire>
+    <montant>36.86</montant>
+    <date valeur="26-6-10"/>
+    <description categorie="repas">restau avec Greg</description>
+  </retrait>
+  <depot type="direct">
+    <payeur>Assurance maladie</payeur>
+    <montant>137.32</montant>
+    <date>21-7-10</date>
+    <description categorie="remboursement">Tamiflu</description>
+  </depot>
+</livre-de-comptes>
